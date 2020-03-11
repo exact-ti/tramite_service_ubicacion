@@ -16,6 +16,20 @@ public class SedeExterna extends Sede {
 	@JoinColumn(name="sede_responsable_id")
 	private Sede sedeResponsable;
 	
+	
+	
+	public Sede getSedeResponsable() {
+		return sedeResponsable;
+	}
+
+
+
+	public void setSedeResponsable(Sede sedeResponsable) {
+		this.sedeResponsable = sedeResponsable;
+	}
+
+
+
 	/**
 	 * 
 	 */
