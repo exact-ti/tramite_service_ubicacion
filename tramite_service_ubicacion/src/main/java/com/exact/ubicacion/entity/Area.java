@@ -31,8 +31,7 @@ public class Area implements Serializable{
 	@JoinColumn(name="sede_id")
 	private Sede sede;	
 	
-	
-	
+		
 	public Long getId() {
 		return id;
 	}
