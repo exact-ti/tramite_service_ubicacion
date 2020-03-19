@@ -23,9 +23,9 @@ public class SimpleAreaDAO implements IAreaDAO{
 	}
 
 	@Override
-	public List<Area> listarByAreasIds(List<Long> areasId) {
-		List<Area> areas = (List<Area>) simplearearepository.findAllById(areasId);
-		return areas;
+	public List<Area> listarAreasByCodigos(List<String> codigos) {
+		return simplearearepository.findByCodigoIn(codigos);
+		
 	}
 
 }

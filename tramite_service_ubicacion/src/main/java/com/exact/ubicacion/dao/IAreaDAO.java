@@ -8,7 +8,7 @@ import com.exact.ubicacion.entity.Area;
 public interface IAreaDAO {
 	
 	Area listarByAreaId(Long areaId);
-	
-	List<Area> listarByAreasIds(List<Long> areasId);
+
+	List<Area> listarAreasByCodigos(List<String> codigosUbicaciones);
 
 }

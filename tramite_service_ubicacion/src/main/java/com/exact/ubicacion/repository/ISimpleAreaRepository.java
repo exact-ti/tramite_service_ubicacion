@@ -14,6 +14,6 @@ public interface ISimpleAreaRepository extends CrudRepository<Area, Long> {
 	@Query(value="Select * from area a where a.area_id = ?1", nativeQuery = true)
 	public Area findAreaByAreaId(Long areaId);
 
-	//CrudRepository -> findAllById
+	public List<Area> findByCodigoIn(List<String> codigos);
 	
 }

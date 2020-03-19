@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.exact.ubicacion.dao.IAreaDAO;
+import com.exact.ubicacion.dto.AreaDTO;
 import com.exact.ubicacion.entity.Area;
 import com.exact.ubicacion.service.AreaService;
 
@@ -41,9 +42,9 @@ public class AreaController {
 	
 	//LISTAR MÁS DE 1 ÁREA
 	@GetMapping
-	public ResponseEntity<List<Area>> ListarByAreasIds(@RequestParam("ids") List<Long> areasId){		
+	public ResponseEntity<List<AreaDTO>> listarAreasByCodigos(@RequestParam("codigos") List<String> codigos){		
 		areaservice = new AreaService(areadao);
-		return new ResponseEntity<List<Area>>(areaservice.listarByAreasIds(areasId), HttpStatus.OK);
+		return new ResponseEntity<List<AreaDTO>>(areaservice.listarAreasByCodigos(codigos), HttpStatus.OK);
 	}
 
 	
