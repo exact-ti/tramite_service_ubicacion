@@ -40,12 +40,12 @@ public class AreaController {
 		return new ResponseEntity<Area>(area, HttpStatus.OK);
 	}
 	
-	//LISTAR MÁS DE 1 ÁREA
 	@GetMapping
 	public ResponseEntity<List<AreaDTO>> listarAreasByCodigos(@RequestParam("codigos") List<String> codigos){		
 		areaservice = new AreaService(areadao);
 		return new ResponseEntity<List<AreaDTO>>(areaservice.listarAreasByCodigos(codigos), HttpStatus.OK);
 	}
+	
 
 	
 }

@@ -1,4 +1,4 @@
-package com.exact.ubicacion.dao;
+package com.exact.ubicacion.dao.impl;
 
 import java.util.List;
 
@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
+import com.exact.ubicacion.dao.IAreaDAO;
 import com.exact.ubicacion.entity.Area;
 import com.exact.ubicacion.repository.ISimpleAreaRepository;
 

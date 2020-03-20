@@ -13,6 +13,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonFilter;
+
 import lombok.Data;
 
 @Entity
@@ -21,6 +23,7 @@ import lombok.Data;
 @Inheritance(
 	    strategy = InheritanceType.JOINED
 	)
+@JsonFilter("SedeFilter")
 public class Sede implements Serializable {
 	
 	
