@@ -18,18 +18,6 @@ public class SedeExterna extends Sede {
 	
 	
 	
-	public Sede getSedeResponsable() {
-		return sedeResponsable;
-	}
-
-
-
-	public void setSedeResponsable(Sede sedeResponsable) {
-		this.sedeResponsable = sedeResponsable;
-	}
-
-
-
 	/**
 	 * 
 	 */
