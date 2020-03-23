@@ -25,11 +25,14 @@ public class Area implements Serializable{
 		
 	private String nombre;
 	
+	private String piso;
+	
 	private String codigo;
 	
 	@ManyToOne
 	@JoinColumn(name="sede_id")
 	private Sede sede;	
+	
 	
 	
 	/**
